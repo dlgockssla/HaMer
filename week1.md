@@ -49,7 +49,7 @@
 1 1 2 7 34
 ```
 
-''#malloc#sort''
+''#malloc#free#sort''
 
 - LEVEL 4
 
@@ -61,6 +61,7 @@
 
 최빈값 : 가장 많이 나온 정수 (가장 많이 나온 값이 여러 개라면 오름차순으로 모두 출력)
 
+''#int#float#casting#mentisa''
 
 
 - LEVEL 5
@@ -78,3 +79,6 @@ hint : 오름차순으로 정렬한 후 중복을 제거
 ```
 
 ''#walker''
+
+next
+#function#pointer#string#two_dimension_array#structure

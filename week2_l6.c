@@ -7,7 +7,7 @@ int main(){
 	char result[102]; // 왜 101 인지도 생각해보세요. 너무 당연할 수도 있습니다.
 	char carry[101] = {0,}; // 올림이 발생했을 때 저장해주는 배열
 	printf("input first value : ");	scanf("%s", first);
-	printf("input second value : ");	scanf("%s", second);
+	printf("input second value : "); scanf("%s", second);
 
 	//일단 덧셈을 쉽게하기 위해 배열을 뒤집음
 	int lenf = strlen(first);
@@ -20,12 +20,12 @@ int main(){
 	}
 	for(int i=0; i<lens/2; i++){//second배열 뒤집기
 		tmp = second[i];
-		second[i] = second[(lenf-1) - i];
-		second[(lenf-1) - i] = tmp;
+		second[i] = second[(lens-1) - i];
+		second[(lens-1) - i] = tmp;
 	}
 	//-> 이처럼 똑같은 과정이 중복될 때 함수를 짜서 깔끔하게 해결할 수 있다
 	//함수는 안배웠기 때문에 생략
-
+    printf("reverse\n%s\n%s\n", first, second);
 	//덧셈 시작
 	int j=0;
 	while(j<lenf && j<lens){
